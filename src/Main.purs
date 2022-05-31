@@ -46,13 +46,7 @@ mkRandomBox = do
           , left: show y <> "px"
           }
       , children:
-          [ element reactPlayer
-              { className: "screen"
-              , controls: true
-              , light: true
-              , url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              }
-          , R.button
+          [ R.button
               { className: "button"
               , children: [ R.text "Click me" ]
               , onClick: handler_ do
